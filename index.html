@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <script defer src="app.js"></script>
+
+    <title>Guess the color</title>
+  </head>
+  <body>
+    <div class="container text-center w-50 mt-4">
+      <button class="btn btn-success mb-4 shadow" onclick="selectBtn()">
+        NEW COLOR
+      </button>
+      <div class="row bg-primary text-white p-2 shadow">
+        <h4 class="mt-2">THE GREAT</h4>
+        <h1 id="RGB">RGB(0, 0, 0)</h1>
+        <h4>GUESSING GAME</h4>
+      </div>
+      <div
+        class="row bg-dark mt-2 d-flex justify-content-center p-3 shadow-lg"
+        id="game"
+      >
+        <h1 class="text-white" id="disp-win">Chances left : 3</h1>
+        <p class="text-white" id="disp-color"></p>
+        <div class="row d-flex justify-content-center">
+          <div class="col-2 m-2">
+            <button
+              class="btn btn-lg p-5"
+              id="r1-1"
+              onclick="checkWinBtn1()"
+            ></button>
+          </div>
+          <div class="col-2 m-2">
+            <button
+              class="btn btn-lg p-5"
+              id="r1-2"
+              onclick="checkWinBtn2()"
+            ></button>
+          </div>
+          <div class="col-2 m-2">
+            <button
+              class="btn btn-lg p-5"
+              id="r1-3"
+              onclick="checkWinBtn3()"
+            ></button>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-2 m-2">
+            <button
+              class="btn btn-lg p-5"
+              id="r2-1"
+              onclick="checkWinBtn4()"
+            ></button>
+          </div>
+          <div class="col-2 m-2">
+            <button
+              class="btn btn-lg p-5"
+              id="r2-2"
+              onclick="checkWinBtn5()"
+            ></button>
+          </div>
+          <div class="col-2 m-2">
+            <button
+              class="btn btn-lg p-5"
+              id="r2-3"
+              onclick="checkWinBtn6()"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
