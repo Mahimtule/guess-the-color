@@ -1,5 +1,5 @@
 
-const random_color = document.getElementById('RGBB')
+const random_color = document.getElementById('RGB')
 const disp_win = document.getElementById('disp-win')
 const disp_color = document.getElementById('disp-color')
 
